@@ -12,7 +12,9 @@ jobs:
           node-version: '14'
           
       - name: Checkout
-        uses: actions/checkout@main  # リポジトリをチェックアウト
+        uses: actions/checkout@v2  # リポジトリをチェックアウト
+        with:
+          ref: main
 
       - name: Install Dependencies
         run: yarn
